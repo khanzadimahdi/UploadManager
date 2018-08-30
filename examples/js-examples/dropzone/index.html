@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="dist/min/dropzone.min.css">
+    </head>
+    <body>
+        <p>you can upload jpg,jpeg,png,gif files up to 5M size</p>
+        <form method="post" class="dropzone">
+            <div class="fallback">
+                <input name="file" type="file" multiple />
+            </div>
+        </form>
+        <footer style="text-align:center;">
+            <a target="_blank" href="http://tarhche.com">by Tarhche.com :-)</a>
+        </footer>
+        <script src="dist/min/dropzone.min.js"></script>
+        <script>
+            Dropzone.autoDiscover=false;
+            var myDropzone = new Dropzone(
+                ".dropzone",
+                {
+                    url: "./server/index.php",
+                    method: "POST",
+                    paramName:'media',
+                    chunking: true,
+                    forceChunking:true,
+                    chunkSize: 1024*1024// 1M chunk size
+                }
+            );
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+{
+    "name": "tarhche/uploadmanager",
+    "description": "simple upload manager",
+    "authors": [
+        {
+            "name": "mahdi khanzadi",
+            "email": "khanzadimahdi@gmail.com"
+        }
+    ],
+    "require": {
+        "ext-fileInfo": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "UploadManager\\": "src/"
+        }
+    }
+}
