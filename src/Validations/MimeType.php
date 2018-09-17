@@ -5,6 +5,12 @@ use UploadManager\Contracts\ChunkInterface;
 use UploadManager\Contracts\ValidationInterface;
 use UploadManager\Exceptions\Upload;
 
+/**
+ * MimeType validation
+ *
+ * Class MimeType
+ * @package UploadManager\Validations
+ */
 class MimeType implements ValidationInterface{
 
     /**

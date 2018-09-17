@@ -7,6 +7,12 @@ use UploadManager\Contracts\UploadInterface;
 use UploadManager\Contracts\ValidationInterface;
 use UploadManager\Exceptions\Upload as UploadException;
 
+/**
+ * stores files (or chunks)
+ *
+ * Class Upload
+ * @package UploadManager
+ */
 class Upload implements UploadInterface {
 
     /**

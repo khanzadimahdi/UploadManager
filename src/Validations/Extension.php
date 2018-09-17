@@ -5,6 +5,13 @@ use UploadManager\Contracts\ChunkInterface;
 use UploadManager\Contracts\ValidationInterface;
 use UploadManager\Exceptions\Upload;
 
+/**
+ * Extension validation
+ *
+ * Class Extension
+ * @package UploadManager\Validations
+ */
+
 class Extension implements ValidationInterface{
 
     /**

@@ -6,6 +6,12 @@ use UploadManager\Contracts\ValidationInterface;
 use UploadManager\Exceptions\Upload as UploadException;
 use UploadManager\Upload;
 
+/**
+ * Size validation
+ *
+ * Class Size
+ * @package UploadManager\Validations
+ */
 class Size implements ValidationInterface{
 
     /**

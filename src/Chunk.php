@@ -4,6 +4,12 @@ namespace UploadManager;
 
 use UploadManager\Contracts\ChunkInterface;
 
+/**
+ * keeps files' (or chunks') information
+ *
+ * Class Chunk
+ * @package UploadManager
+ */
 class Chunk implements ChunkInterface {
 
 	/**
