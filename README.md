@@ -1,5 +1,7 @@
 # PHP upload manager
 
+![screen record](examples/js-examples/resumable-chunk-upload/screen-record.gif?raw=true "uploading chunk file with resume mechanism")
+
 ## Description
 File upload manager can be used to upload chunk and non-chunk files.
 
