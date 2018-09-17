@@ -30,6 +30,15 @@
 					    new \UploadManager\Validations\Extension(['jpg','jpeg','png','gif']),
                     ]);
 
+                    //add callback : remove uploaded chunks on error
+                    $uploadManager->afterValidate(function($chunk){
+                        $address=($chunk->getSavePath().$chunk->getNameWithExtension());
+                        if($chunk->hasError() && file_exists($address)){
+                            //remove current chunk on error
+                            @unlink($address);
+                        }
+                    });
+
 					$chunks=$uploadManager->upload('uploads');
 
 					if(!empty($chunks)){

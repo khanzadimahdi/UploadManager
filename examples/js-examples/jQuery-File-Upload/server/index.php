@@ -1,6 +1,6 @@
 <?php
 	//add composer autoloader
-	include '../../../../vendor/autoload.php';
+	require '../../../../vendor/autoload.php';
 
     try{
         if($_SERVER['REQUEST_METHOD']=='POST'){
@@ -14,10 +14,11 @@
 
             //add callback : remove uploaded chunks on error
             $uploadManager->afterValidate(function($chunk){
-                $address=($chunk->getSavePath().$chunk->getNameWithExtension());
-                if(file_exists($address)){
-                    @unlink($address);
-                }
+				$address=($chunk->getSavePath().$chunk->getNameWithExtension());
+				if($chunk->hasError() && file_exists($address)){
+					//remove current chunk on error
+					@unlink($address);
+				}
             });
 
             $chunks=$uploadManager->upload('../uploads');

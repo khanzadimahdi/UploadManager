@@ -1,6 +1,6 @@
 <?php
 	//add composer autoloader
-	include '../../vendor/autoload.php';
+	require '../../vendor/autoload.php';
 ?>
 <!doctype html>
 <html lang="en">

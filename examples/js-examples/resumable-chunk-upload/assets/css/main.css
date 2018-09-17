@@ -1,0 +1,21 @@
+.margin-t-10{
+    margin-top:10px;
+}
+
+.margin-l-3{
+    margin-left:3px;
+}
+
+.margin-r-3{
+    margin-right:3px;
+}
+
+.margin-10{
+    margin:10px;
+}
+
+.login-bg{
+    background-image: url('../images/login-bg.jpg');
+    background-attachment: fixed;
+    background-size:cover;
+}
