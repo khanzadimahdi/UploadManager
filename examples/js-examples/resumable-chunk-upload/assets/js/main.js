@@ -256,7 +256,7 @@ function uploader(options){
                             'get'
                         );
                     }else{
-                        alert('فایل انتخاب شده باید دقیقا همان فایلی باشد که قبلا قصد آپلود آن را داشته بودید');
+                        alert('selected file must be the same as the un-complete uploaded file.');
                     }
                 },false);
                 file.click();
